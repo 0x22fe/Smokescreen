@@ -229,7 +229,7 @@ public class MainActivity extends AppCompatActivity {
                     if (msg.arg1 == 1) {
                         mBluetoothStatus.setText("Connected to Device: " + msg.obj);
 
-                        mSmokescreenToggle.setText(getString(R.string.smokescreen_connected));
+                        // mSmokescreenToggle.setText(getString(R.string.smokescreen_connected));
                         Toast.makeText(getBaseContext(), "Connected to device", Toast.LENGTH_SHORT).show();
 
                     } else {
