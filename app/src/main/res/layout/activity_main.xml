@@ -10,106 +10,134 @@
     tools:context="com.x22fe.smokescreen.MainActivity">
 
     <LinearLayout
-        android:orientation="vertical"
+        android:id="@+id/loading_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/checkbox1"
-            android:layout_width="wrap_content"
+        <ProgressBar
+            android:id="@+id/progress_cyclic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:minWidth="40dp"
+            android:minHeight="40dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/loading_info"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/bluetoothStatus"
-            android:layout_alignLeft="@+id/bluetoothStatus"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:checked="false"
-            android:scaleX="1.7"
-            android:scaleY="1.7"
-            android:text="@string/toggle_test"
+            android:text="@string/loading_resources"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/app_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/smokescreen_dashboard"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textStyle="bold" />
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_height="wrap_content">
+            android:orientation="horizontal"
+            android:visibility="gone">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
-                android:text="@string/rx"
                 android:ellipsize="end"
                 android:maxLines="1"
+                android:text="@string/rx"
                 android:textStyle="bold" />
+
             <TextView
+                android:id="@+id/readBuffer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.9"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:text="@string/lt_read_buffer"
-                android:id="@+id/readBuffer"
-                android:layout_centerHorizontal="true" />
+                android:text="@string/lt_read_buffer" />
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
-                android:text="@string/status"
                 android:ellipsize="end"
                 android:maxLines="1"
+                android:text="@string/status"
                 android:textStyle="bold" />
+
             <TextView
+                android:id="@+id/bluetoothStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.9"
 
-                android:text="@string/lt_bluetooth_status"
-                android:id="@+id/bluetoothStatus"
+                android:layout_weight="0.9"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:layout_centerHorizontal="true"
-                android:layout_alignTop="@+id/checkbox1" />
+                android:text="@string/lt_bluetooth_status" />
         </LinearLayout>
 
         <Switch
-            android:id="@+id/switch1"
+            android:id="@+id/switch_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/toggle_smokescreen"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:visibility="gone" />
+
+        <Switch
+            android:id="@+id/switch_bluetooth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:text="@string/toggle_bluetooth" />
+            android:text="@string/toggle_bluetooth"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
         <Button
+            android:id="@+id/button_paired"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/show_paired_devices"
-            android:id="@+id/PairedBtn"
-            android:layout_below="@+id/scan"
-            android:layout_toStartOf="@+id/discover" />
+            android:visibility="gone" />
 
         <Button
+            android:id="@+id/button_discover"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/discover_new_devices"
-            android:id="@+id/discover"
-            android:layout_below="@+id/off"
-            android:layout_toRightOf="@+id/checkbox1"
-            android:layout_toEndOf="@+id/checkbox1" />
+            android:text="@string/discover_new_devices" />
 
         <ListView
+            android:id="@+id/list_devices_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/devicesListView"
-            android:choiceMode="singleChoice"
-            android:layout_below="@+id/PairedBtn"
-            android:layout_alignRight="@+id/off"
-            android:layout_alignEnd="@+id/off" />
+            android:choiceMode="singleChoice" />
 
     </LinearLayout>
 

@@ -3,12 +3,110 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="toggle_test">Test TX</string>
     <string name="rx">RX:</string>
     <string name="lt_read_buffer"><![CDATA[<Read Buffer>]]></string>
     <string name="status">Status:</string>
     <string name="lt_bluetooth_status"><![CDATA[<Bluetooth Status>]]></string>
     <string name="show_paired_devices">View Paired</string>
     <string name="discover_new_devices">Discover</string>
-    <string name="toggle_bluetooth">Toggle Bluetooth</string>
+    <string name="toggle_bluetooth">Bluetooth</string>
+    <string name="loading_resources">Loading resources...</string>
+    <string name="bluetooth_not_on">Bluetooth is not on</string>
+    <string name="bluetooth_list_paired">Listed Paired Devices</string>
+    <string name="bluetooth_stopped_discovery">Discovery stopped</string>
+    <string name="bluetooth_started_discovery">Discovery started</string>
+    <string name="bluetooth_turned_off">Bluetooth turned off</string>
+    <string name="bluetooth_already_on">Bluetooth is already on</string>
+    <string name="bluetooth_on">Bluetooth turned on</string>
+    <string name="bluetooth_device_not_found">Bluetooth device not found!</string>
+    <string name="toggle_smokescreen">Smokescreen</string>
+    <string name="smokescreen_dashboard">Smokescreen Dashboard</string>
+    <string name="smokescreen_no_connection">Not connected to a Smokescreen device</string>
+    <string name="speech_failed_load">Failed to load speech engine</string>
+    <string name="smokescreen_disconnected">Smokescreen (disconnected)</string>
+    <string name="smokescreen_connected">Smokescreen (connected)</string>
+
+    <string-array name="object_recognition_array">
+        <item>person</item>
+        <item>bicycle</item>
+        <item>car</item>
+        <item>motorcycle</item>
+        <item>airplane</item>
+        <item>bus</item>
+        <item>train</item>
+        <item>truck</item>
+        <item>boat</item>
+        <item>traffic light</item>
+        <item>fire hydrant</item>
+        <item>stop sign</item>
+        <item>parking meter</item>
+        <item>bench</item>
+        <item>bird</item>
+        <item>cat</item>
+        <item>dog</item>
+        <item>horse</item>
+        <item>sheep</item>
+        <item>cow</item>
+        <item>elephant</item>
+        <item>bear</item>
+        <item>zebra</item>
+        <item>giraffe</item>
+        <item>backpack</item>
+        <item>umbrella</item>
+        <item>handbag</item>
+        <item>tie</item>
+        <item>suitcase</item>
+        <item>frisbee</item>
+        <item>skis</item>
+        <item>snowboard</item>
+        <item>sports ball</item>
+        <item>kite</item>
+        <item>baseball bat</item>
+        <item>baseball glove</item>
+        <item>skateboard</item>
+        <item>surfboard</item>
+        <item>tennis racket</item>
+        <item>bottle</item>
+        <item>wine glass</item>
+        <item>cup</item>
+        <item>fork</item>
+        <item>knife</item>
+        <item>spoon</item>
+        <item>bowl</item>
+        <item>banana</item>
+        <item>apple</item>
+        <item>sandwich</item>
+        <item>orange</item>
+        <item>broccoli</item>
+        <item>carrot</item>
+        <item>hot dog</item>
+        <item>pizza</item>
+        <item>donut</item>
+        <item>cake</item>
+        <item>chair</item>
+        <item>couch</item>
+        <item>potted plant</item>
+        <item>bed</item>
+        <item>dining table</item>
+        <item>toilet</item>
+        <item>tv</item>
+        <item>laptop</item>
+        <item>mouse</item>
+        <item>remote</item>
+        <item>keyboard</item>
+        <item>cell phone</item>
+        <item>microwave</item>
+        <item>oven</item>
+        <item>toaster</item>
+        <item>sink</item>
+        <item>refrigerator</item>
+        <item>book</item>
+        <item>clock</item>
+        <item>vase</item>
+        <item>scissors</item>
+        <item>teddy bear</item>
+        <item>hair drier</item>
+        <item>toothbrush</item>
+    </string-array>
+
 </resources>
