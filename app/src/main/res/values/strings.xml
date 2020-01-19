@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Smokescreen</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="toggle_test">Test TX</string>
+    <string name="rx">RX:</string>
+    <string name="lt_read_buffer"><![CDATA[<Read Buffer>]]></string>
+    <string name="status">Status:</string>
+    <string name="lt_bluetooth_status"><![CDATA[<Bluetooth Status>]]></string>
+    <string name="show_paired_devices">View Paired</string>
+    <string name="discover_new_devices">Discover</string>
+    <string name="toggle_bluetooth">Toggle Bluetooth</string>
+</resources>
